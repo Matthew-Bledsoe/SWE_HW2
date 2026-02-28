@@ -1,5 +1,8 @@
 Node.js for management, make sure you're in the right directory when you type node server.js to start the web app
 Use .env for logging into SQL connection so make sure you do that yourself to connect to the database
+
+ChatGPT helped me get through the process of setting up MySQL because of conflicts I had with the application from previous projects
+
 ### Example recipe to add into list manually
 - Name: Chicken Teriyaki  
 - Description: Juicy chicken cooked in a sweet and savory teriyaki sauce  
