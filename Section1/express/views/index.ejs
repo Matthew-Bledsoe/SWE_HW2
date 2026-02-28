@@ -1,0 +1,18 @@
+<head>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    
+    <h1>Recipe List</h1>
+    <ul>
+      <% recipes.forEach(recipe => { %>
+        <li>
+          <a href="/recipe/<%= recipe.recipe_id %>">
+            <%= recipe.name %>
+          </a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+</body>
