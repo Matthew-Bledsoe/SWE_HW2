@@ -83,3 +83,18 @@ ul.ingredients li {
 .back-link:hover {
     background-color: #d35400;
 }
+
+.home-button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 15px;
+    background-color: #3498db; /* blue */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #2980b9;
+}

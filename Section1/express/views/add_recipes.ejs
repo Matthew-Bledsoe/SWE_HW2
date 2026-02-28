@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="container">
+  <a href="/" class="home-button">Home</a>
+  <h1>Add a New Recipe</h1>
+  <form action="/add_recipes" method="POST">
+    <label for="name">Recipe Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" required></textarea><br><br>
+
+    <label for="prep_time">Prep Time (minutes):</label><br>
+    <input type="number" id="prep_time" name="prep_time_minutes" required><br><br>
+
+    <label for="main_protein">Main Protein:</label><br>
+    <select id="main_protein" name="main_protein" required>
+      <option value="Chicken">Chicken</option>
+      <option value="Beef">Beef</option>
+      <option value="Tofu">Tofu</option>
+      <option value="Grains">Grains</option>
+    </select><br><br>
+
+    <label for="ingredients">Ingredients (separate with commas):</label><br>
+    <textarea id="ingredients" name="ingredients" placeholder="e.g., 2 cups Flour, 1 Egg, 1 cup Milk" required></textarea><br><br>
+
+    <label for="steps">Steps (separate with commas):</label><br>
+    <textarea id="steps" name="steps" placeholder="e.g., Mix flour and eggs, Add milk, Cook on griddle" required></textarea><br><br>
+
+    <button type="submit">Add Recipe</button>
+  </form>
+
+  <a href="/recipes" class="back-link">Back to Listings</a>
+</div>
+</body>
+</html>

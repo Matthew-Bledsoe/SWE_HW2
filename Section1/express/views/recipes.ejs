@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipes</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+    <a href="/" class="home-button">Home</a>
+        <h1>Recipe Listings</h1>
+
+    <% for (let category in recipesByCategory) { %>
+        <h2><%= category %> Recipes</h2>
+        <ul>
+        <% recipesByCategory[category].forEach(recipe => { %>
+            <li>
+            <a href="/recipe/<%= recipe.recipe_id %>"><%= recipe.name %></a>
+            </li>
+        <% }) %>
+        </ul>
+    <% } %>
+
+    <a href="/add_recipes" class="back-link">Add a New Recipe</a>
+    </div>
+</body>
+</html>
